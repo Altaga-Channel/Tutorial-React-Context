@@ -88,14 +88,13 @@ class ContextProvider extends React.Component {
     const { children } = this.props
     const { value } = this.state
     // Fill this object with the methods you want to pass down to the context
-    const { setValue, updateDate, counterDown, counterUp } = this
+    const { updateDate, counterDown, counterUp } = this
 
     return (
       <ContextModule.Provider
         // Provide all the methods and values defined above
         value={{
           value,
-          setValue,
           updateDate,
           counterDown,
           counterUp,
